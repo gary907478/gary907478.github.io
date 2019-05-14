@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="#installation  brew update before installation. brew install postgresql download PSequel  #Command ##creat database  creatdb ‘dbname’  ##creat table  CREATE TABLE table_name (dataName dataType, dataNa">
+  <meta name="description" content="installation brew update before installation. brew install postgresql download PSequel  ommandcreat database creatdb ‘dbname’  creat table CREATE TABLE table_name (dataName dataType, dataName dataType">
 <meta name="keywords" content="SQL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PostgreSQL Notes">
 <meta property="og:url" content="http://yoursite.com/2019/05/14/PostgreSQL-使用笔记/index.html">
 <meta property="og:site_name" content="Gary&#39;s Blog">
-<meta property="og:description" content="#installation  brew update before installation. brew install postgresql download PSequel  #Command ##creat database  creatdb ‘dbname’  ##creat table  CREATE TABLE table_name (dataName dataType, dataNa">
+<meta property="og:description" content="installation brew update before installation. brew install postgresql download PSequel  ommandcreat database creatdb ‘dbname’  creat table CREATE TABLE table_name (dataName dataType, dataName dataType">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-14T19:00:38.903Z">
+<meta property="og:updated_time" content="2019-05-14T19:03:43.412Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PostgreSQL Notes">
-<meta name="twitter:description" content="#installation  brew update before installation. brew install postgresql download PSequel  #Command ##creat database  creatdb ‘dbname’  ##creat table  CREATE TABLE table_name (dataName dataType, dataNa">
+<meta name="twitter:description" content="installation brew update before installation. brew install postgresql download PSequel  ommandcreat database creatdb ‘dbname’  creat table CREATE TABLE table_name (dataName dataType, dataName dataType">
 
 
 
@@ -383,7 +383,7 @@
                 
               
 
-              <time title="Created: 2019-05-14 14:35:59 / Modified: 15:00:38" itemprop="dateCreated datePublished" datetime="2019-05-14T14:35:59-04:00">2019-05-14</time>
+              <time title="Created: 2019-05-14 14:35:59 / Modified: 15:03:43" itemprop="dateCreated datePublished" datetime="2019-05-14T14:35:59-04:00">2019-05-14</time>
             
 
             
@@ -429,40 +429,33 @@
       
 
       
-        <p>#installation</p>
-<ul>
+        <h1 id="installation"><a href="#installation" class="headerlink" title="installation"></a>installation</h1><ul>
 <li><strong>brew update</strong> before installation.</li>
 <li><strong>brew install postgresql</strong></li>
 <li>download <strong>PSequel</strong></li>
 </ul>
-<p>#Command</p>
-<p>##creat database</p>
-<ul>
+<h1 id="ommand"><a href="#ommand" class="headerlink" title="ommand"></a>ommand</h1><h2 id="creat-database"><a href="#creat-database" class="headerlink" title="creat database"></a>creat database</h2><ul>
 <li>creatdb ‘dbname’</li>
 </ul>
-<p>##creat table</p>
-<ul>
+<h2 id="creat-table"><a href="#creat-table" class="headerlink" title="creat table"></a>creat table</h2><ul>
 <li><strong>CREATE TABLE</strong> table_name (dataName dataType, dataName dataType);<ul>
 <li>ex. <strong>CREATE TABLE</strong> users (name text, age smallint, birthday date);</li>
 </ul>
 </li>
 </ul>
-<p>##insert data into table</p>
-<ul>
+<h2 id="insert-data-into-table"><a href="#insert-data-into-table" class="headerlink" title="insert data into table"></a>insert data into table</h2><ul>
 <li><strong>INSERT INTO</strong> table_name(dataName1, dataName2, dataName3) <strong>VALUE</strong> (value1, value2, value3);<ul>
 <li>ex. <strong>INSERT INTO</strong> users(name, age, birthday) <strong>VALUE</strong> (‘Gary‘, 25, 1994-01-01);</li>
 </ul>
 </li>
 </ul>
-<p>##check datas</p>
-<ul>
+<h2 id="check-datas"><a href="#check-datas" class="headerlink" title="check datas"></a>check datas</h2><ul>
 <li><strong>SELECT</strong> dataName1,dataName2,dataName3 <strong>FROM</strong> table_name;<ul>
 <li>ex. <strong>SELECT</strong> name, age, birthday <strong>FROM</strong> users;</li>
 </ul>
 </li>
 </ul>
-<p>###check datas with condition</p>
-<ul>
+<h3 id="check-datas-with-condition"><a href="#check-datas-with-condition" class="headerlink" title="check datas with condition"></a>check datas with condition</h3><ul>
 <li><p><strong>SELECT</strong> * <strong>FROM</strong> users <strong>WHERE</strong> name <strong>LIKE</strong> ‘A%’;</p>
 <ul>
 <li>search all datas that name start with A.</li>
@@ -474,15 +467,13 @@
 </ul>
 </li>
 </ul>
-<p>##alter table</p>
-<ul>
+<h2 id="alter-table"><a href="#alter-table" class="headerlink" title="alter table"></a>alter table</h2><ul>
 <li><strong>ALTER TABLE</strong> table_name <strong>ADD</strong> dataName dataType;<ul>
 <li>ex. <strong>ALTER TABLE</strong> users <strong>ADD</strong> weight smallint;</li>
 </ul>
 </li>
 </ul>
-<p>##update datas</p>
-<ul>
+<h2 id="update-datas"><a href="#update-datas" class="headerlink" title="update datas"></a>update datas</h2><ul>
 <li><strong>UPDATE</strong> table_name <strong>SET</strong> dataName = value <strong>WHERE</strong> dataName = value;<ul>
 <li><strong>UPDATE</strong> users <strong>SET</strong> weight = 60 <strong>WHERE</strong> name = ‘Gary’;</li>
 </ul>
@@ -576,8 +567,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -680,6 +680,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#installation"><span class="nav-number">1.</span> <span class="nav-text">installation</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ommand"><span class="nav-number">2.</span> <span class="nav-text">ommand</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#creat-database"><span class="nav-number">2.1.</span> <span class="nav-text">creat database</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#creat-table"><span class="nav-number">2.2.</span> <span class="nav-text">creat table</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#insert-data-into-table"><span class="nav-number">2.3.</span> <span class="nav-text">insert data into table</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#check-datas"><span class="nav-number">2.4.</span> <span class="nav-text">check datas</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#check-datas-with-condition"><span class="nav-number">2.4.1.</span> <span class="nav-text">check datas with condition</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#alter-table"><span class="nav-number">2.5.</span> <span class="nav-text">alter table</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#update-datas"><span class="nav-number">2.6.</span> <span class="nav-text">update datas</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

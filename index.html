@@ -381,7 +381,7 @@
                 
               
 
-              <time title="Created: 2019-05-14 14:35:59 / Modified: 15:00:38" itemprop="dateCreated datePublished" datetime="2019-05-14T14:35:59-04:00">2019-05-14</time>
+              <time title="Created: 2019-05-14 14:35:59 / Modified: 15:03:43" itemprop="dateCreated datePublished" datetime="2019-05-14T14:35:59-04:00">2019-05-14</time>
             
 
             
@@ -422,40 +422,33 @@
       
         
           
-            <p>#installation</p>
-<ul>
+            <h1 id="installation"><a href="#installation" class="headerlink" title="installation"></a>installation</h1><ul>
 <li><strong>brew update</strong> before installation.</li>
 <li><strong>brew install postgresql</strong></li>
 <li>download <strong>PSequel</strong></li>
 </ul>
-<p>#Command</p>
-<p>##creat database</p>
-<ul>
+<h1 id="ommand"><a href="#ommand" class="headerlink" title="ommand"></a>ommand</h1><h2 id="creat-database"><a href="#creat-database" class="headerlink" title="creat database"></a>creat database</h2><ul>
 <li>creatdb ‘dbname’</li>
 </ul>
-<p>##creat table</p>
-<ul>
+<h2 id="creat-table"><a href="#creat-table" class="headerlink" title="creat table"></a>creat table</h2><ul>
 <li><strong>CREATE TABLE</strong> table_name (dataName dataType, dataName dataType);<ul>
 <li>ex. <strong>CREATE TABLE</strong> users (name text, age smallint, birthday date);</li>
 </ul>
 </li>
 </ul>
-<p>##insert data into table</p>
-<ul>
+<h2 id="insert-data-into-table"><a href="#insert-data-into-table" class="headerlink" title="insert data into table"></a>insert data into table</h2><ul>
 <li><strong>INSERT INTO</strong> table_name(dataName1, dataName2, dataName3) <strong>VALUE</strong> (value1, value2, value3);<ul>
 <li>ex. <strong>INSERT INTO</strong> users(name, age, birthday) <strong>VALUE</strong> (‘Gary‘, 25, 1994-01-01);</li>
 </ul>
 </li>
 </ul>
-<p>##check datas</p>
-<ul>
+<h2 id="check-datas"><a href="#check-datas" class="headerlink" title="check datas"></a>check datas</h2><ul>
 <li><strong>SELECT</strong> dataName1,dataName2,dataName3 <strong>FROM</strong> table_name;<ul>
 <li>ex. <strong>SELECT</strong> name, age, birthday <strong>FROM</strong> users;</li>
 </ul>
 </li>
 </ul>
-<p>###check datas with condition</p>
-<ul>
+<h3 id="check-datas-with-condition"><a href="#check-datas-with-condition" class="headerlink" title="check datas with condition"></a>check datas with condition</h3><ul>
 <li><p><strong>SELECT</strong> * <strong>FROM</strong> users <strong>WHERE</strong> name <strong>LIKE</strong> ‘A%’;</p>
 <ul>
 <li>search all datas that name start with A.</li>
@@ -467,15 +460,13 @@
 </ul>
 </li>
 </ul>
-<p>##alter table</p>
-<ul>
+<h2 id="alter-table"><a href="#alter-table" class="headerlink" title="alter table"></a>alter table</h2><ul>
 <li><strong>ALTER TABLE</strong> table_name <strong>ADD</strong> dataName dataType;<ul>
 <li>ex. <strong>ALTER TABLE</strong> users <strong>ADD</strong> weight smallint;</li>
 </ul>
 </li>
 </ul>
-<p>##update datas</p>
-<ul>
+<h2 id="update-datas"><a href="#update-datas" class="headerlink" title="update datas"></a>update datas</h2><ul>
 <li><strong>UPDATE</strong> table_name <strong>SET</strong> dataName = value <strong>WHERE</strong> dataName = value;<ul>
 <li><strong>UPDATE</strong> users <strong>SET</strong> weight = 60 <strong>WHERE</strong> name = ‘Gary’;</li>
 </ul>
