@@ -336,6 +336,207 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/14/PostgreSQL-使用笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Gary Zhang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gary's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/05/14/PostgreSQL-使用笔记/" class="post-title-link" itemprop="url">PostgreSQL Notes</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-05-14 14:35:59 / Modified: 15:00:38" itemprop="dateCreated datePublished" datetime="2019-05-14T14:35:59-04:00">2019-05-14</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>#installation</p>
+<ul>
+<li><strong>brew update</strong> before installation.</li>
+<li><strong>brew install postgresql</strong></li>
+<li>download <strong>PSequel</strong></li>
+</ul>
+<p>#Command</p>
+<p>##creat database</p>
+<ul>
+<li>creatdb ‘dbname’</li>
+</ul>
+<p>##creat table</p>
+<ul>
+<li><strong>CREATE TABLE</strong> table_name (dataName dataType, dataName dataType);<ul>
+<li>ex. <strong>CREATE TABLE</strong> users (name text, age smallint, birthday date);</li>
+</ul>
+</li>
+</ul>
+<p>##insert data into table</p>
+<ul>
+<li><strong>INSERT INTO</strong> table_name(dataName1, dataName2, dataName3) <strong>VALUE</strong> (value1, value2, value3);<ul>
+<li>ex. <strong>INSERT INTO</strong> users(name, age, birthday) <strong>VALUE</strong> (‘Gary‘, 25, 1994-01-01);</li>
+</ul>
+</li>
+</ul>
+<p>##check datas</p>
+<ul>
+<li><strong>SELECT</strong> dataName1,dataName2,dataName3 <strong>FROM</strong> table_name;<ul>
+<li>ex. <strong>SELECT</strong> name, age, birthday <strong>FROM</strong> users;</li>
+</ul>
+</li>
+</ul>
+<p>###check datas with condition</p>
+<ul>
+<li><p><strong>SELECT</strong> * <strong>FROM</strong> users <strong>WHERE</strong> name <strong>LIKE</strong> ‘A%’;</p>
+<ul>
+<li>search all datas that name start with A.</li>
+</ul>
+</li>
+<li><p><strong>SELECT</strong> * <strong>FROM</strong> users <strong>ORDER BY</strong> weight <strong>DESC/ASC</strong>;</p>
+<ul>
+<li>select all datas with descending/ascending order. 降序/升序</li>
+</ul>
+</li>
+</ul>
+<p>##alter table</p>
+<ul>
+<li><strong>ALTER TABLE</strong> table_name <strong>ADD</strong> dataName dataType;<ul>
+<li>ex. <strong>ALTER TABLE</strong> users <strong>ADD</strong> weight smallint;</li>
+</ul>
+</li>
+</ul>
+<p>##update datas</p>
+<ul>
+<li><strong>UPDATE</strong> table_name <strong>SET</strong> dataName = value <strong>WHERE</strong> dataName = value;<ul>
+<li><strong>UPDATE</strong> users <strong>SET</strong> weight = 60 <strong>WHERE</strong> name = ‘Gary’;</li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/14/Tai-Lopez的四条快速阅读原则/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1035,7 +1236,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1065,7 +1266,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
